@@ -3,6 +3,7 @@ apiVersion: v1
 kind: Secret
 metadata:
   name: mysql-secret
+  namespace: flask-api
 stringData:
   mysql-password: devops123
 ---
@@ -10,6 +11,7 @@ apiVersion: v1
 kind: ConfigMap
 metadata:
   name: mysql-config
+  namespace: flask-api
 data:
   mysql-user: devops
   mysql-db: student
