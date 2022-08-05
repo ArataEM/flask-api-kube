@@ -55,12 +55,12 @@ probes:
   startupProbe:
     httpGet:
       path: /api/health-check/ok
-      port: flask
+      port: http
     failureThreshold: 5
     periodSeconds: 3
   readinessProbe:
     httpGet:
       path: /api/health-check/ok
-      port: flask
+      port: http
     failureThreshold: 5
     periodSeconds: 3
